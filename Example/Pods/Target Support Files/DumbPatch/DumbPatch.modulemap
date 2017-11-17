@@ -1,0 +1,6 @@
+framework module DumbPatch {
+  umbrella header "DumbPatch-umbrella.h"
+
+  export *
+  module * { export * }
+}
