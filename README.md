@@ -22,7 +22,7 @@ pod 'DumbPatch'
 
 ## Author
 
-rongtian, 121071838@qq.com
+macRong, rong@shengshui.com
 
 ## License
 
