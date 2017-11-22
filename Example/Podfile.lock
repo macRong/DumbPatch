@@ -1,19 +1,15 @@
 PODS:
-  - DumbPatch (0.1.0)
+  - DumbPatch (0.1.1)
   - Kiwi (2.4.0)
 
 DEPENDENCIES:
-  - DumbPatch (from `../`)
+  - DumbPatch
   - Kiwi
 
-EXTERNAL SOURCES:
-  DumbPatch:
-    :path: ../
-
 SPEC CHECKSUMS:
-  DumbPatch: cee055e1bbf6078a766b6cd44e394b870d7a4524
+  DumbPatch: c1f3c68f9aaaca847dcd377dbdf68d6b26d71529
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
 
-PODFILE CHECKSUM: 987ace3c8d63d14cba9bad6926e2be6b897df202
+PODFILE CHECKSUM: abebccaef7d829db23e52aaf7ac14bd43f150349
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1

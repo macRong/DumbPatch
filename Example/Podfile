@@ -1,8 +1,9 @@
 use_frameworks!
 
 target 'DumbPatch_Example' do
-  pod 'DumbPatch', :path => '../'
-
+#  pod 'DumbPatch', :path => '../'
+   pod 'DumbPatch'
+ 
   target 'DumbPatch_Tests' do
     inherit! :search_paths
 

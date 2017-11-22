@@ -18,6 +18,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *arr = @[];
+    NSInteger len = arr.length;
+    
+    NSArray *array = @[];
+    id co = array[3];
+    
+    NSString *name = nil;
+    NSDictionary *dic = @{@"name":name, @"age":@27};
 }
 
 - (void)didReceiveMemoryWarning
