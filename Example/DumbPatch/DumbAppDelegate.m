@@ -7,13 +7,36 @@
 //
 
 #import "DumbAppDelegate.h"
+#import "DumbCatchCrash.h"
 
 @implementation DumbAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+//    [DumbCatchCrash handelExtremely];
+
+//     InstallUncaughtExceptionHandler();
+
+
+//         NSSetUncaughtExceptionHandler(handException);
+    
+
     return YES;
+}
+
+void handException(NSException * exception){
+    
+    /** 弹出提示框 */
+    UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"title" message:@"message" delegate:nil  cancelButtonTitle:@"cancel" otherButtonTitles:@"titles", nil];
+    [alert show];
+    
+    /** 重新启动 runloop */
+    [[NSRunLoop currentRunLoop]addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
+    [[NSRunLoop currentRunLoop]run];
+    
+    NSLog(@"---runloop 完成----");
+    
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

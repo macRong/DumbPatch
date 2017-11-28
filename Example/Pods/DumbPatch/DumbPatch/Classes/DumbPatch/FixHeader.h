@@ -9,7 +9,7 @@
 #import "DumbPatch.h"
 
 #ifdef DEBUG
-#define MPT_DataSave_enable  1
+#define MPT_DataSave_enable  0
 #else
 #define MPT_DataSave_enable  1
 #endif

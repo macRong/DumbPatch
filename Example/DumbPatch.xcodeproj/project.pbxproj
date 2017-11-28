@@ -14,7 +14,7 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* DumbAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* DumbAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* DumbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* DumbViewController.m */; };
+		6003F5A7195388D20070C39A /* DumbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* DumbViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -23,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		AE3665771FC66CFE0008D8D4 /* DumbCatchCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3665761FC66CFE0008D8D4 /* DumbCatchCrash.m */; };
 		E6B37711EADC466B429BB9A2 /* Pods_DumbPatch_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06B9AFFD0BA1DA3B2474C8A /* Pods_DumbPatch_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,8 +39,8 @@
 
 /* Begin PBXFileReference section */
 		0851CD11FF05A1B277BED5C9 /* Pods-DumbPatch_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DumbPatch_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DumbPatch_Tests/Pods-DumbPatch_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1834DF2F532380982FDCB2B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		1E51CD5CB9D51A6797C2FF94 /* DumbPatch.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DumbPatch.podspec; path = ../DumbPatch.podspec; sourceTree = "<group>"; };
+		1834DF2F532380982FDCB2B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1E51CD5CB9D51A6797C2FF94 /* DumbPatch.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DumbPatch.podspec; path = ../DumbPatch.podspec; sourceTree = "<group>"; };
 		347F5C4109E75E55BE491791 /* Pods_DumbPatch_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DumbPatch_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		365CDA145111B6478193A3AD /* Pods-DumbPatch_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DumbPatch_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DumbPatch_Tests/Pods-DumbPatch_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DumbPatch_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DumbPatch_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,9 +63,11 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		61487F009E390B96E4FAE135 /* Pods-DumbPatch_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DumbPatch_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DumbPatch_Example/Pods-DumbPatch_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		7167F39B3C1384582D54ACDB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7167F39B3C1384582D54ACDB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE3665751FC66CFE0008D8D4 /* DumbCatchCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DumbCatchCrash.h; sourceTree = "<group>"; };
+		AE3665761FC66CFE0008D8D4 /* DumbCatchCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DumbCatchCrash.m; sourceTree = "<group>"; };
 		B06B9AFFD0BA1DA3B2474C8A /* Pods_DumbPatch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DumbPatch_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09F41D1D8DF67D53DD95DC6 /* Pods-DumbPatch_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DumbPatch_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DumbPatch_Example/Pods-DumbPatch_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +148,8 @@
 			children = (
 				6003F59C195388D20070C39A /* DumbAppDelegate.h */,
 				6003F59D195388D20070C39A /* DumbAppDelegate.m */,
+				AE3665751FC66CFE0008D8D4 /* DumbCatchCrash.h */,
+				AE3665761FC66CFE0008D8D4 /* DumbCatchCrash.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* DumbViewController.h */,
 				6003F5A6195388D20070C39A /* DumbViewController.m */,
@@ -209,6 +214,7 @@
 				6003F588195388D20070C39A /* Resources */,
 				F87C2834C21E09E1A3038E9C /* [CP] Embed Pods Frameworks */,
 				035BCC7347259F79FEA5CBE4 /* [CP] Copy Pods Resources */,
+				AE29781F1FC5899E00425B93 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -250,6 +256,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = rongtian;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 92TS993A24;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -345,6 +354,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DumbPatch_Tests/Pods-DumbPatch_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AE29781F1FC5899E00425B93 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "";
+		};
 		AE8BDF47AE9FA5159B29B801 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,6 +431,7 @@
 				6003F59E195388D20070C39A /* DumbAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* DumbViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				AE3665771FC66CFE0008D8D4 /* DumbCatchCrash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,10 +559,13 @@
 			baseConfigurationReference = 61487F009E390B96E4FAE135 /* Pods-DumbPatch_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 92TS993A24;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DumbPatch/DumbPatch-Prefix.pch";
 				INFOPLIST_FILE = "DumbPatch/DumbPatch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -551,9 +577,11 @@
 			baseConfigurationReference = F09F41D1D8DF67D53DD95DC6 /* Pods-DumbPatch_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 92TS993A24;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DumbPatch/DumbPatch-Prefix.pch";
 				INFOPLIST_FILE = "DumbPatch/DumbPatch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,6 +7,7 @@
 //
 
 #import "DumbViewController.h"
+#import "DumbCatchCrash.h"
 
 @interface DumbViewController ()
 
@@ -19,14 +20,39 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    NSString *arr = @[];
-    NSInteger len = arr.length;
     
-    NSArray *array = @[];
-    id co = array[3];
+//    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+//    NSString* s = [[NSString alloc]initWithString:@"This is a test string"];
+//    s = [s substringFromIndex:[s rangeOfString:@"a"].location];//内存泄露
+//    [s release];//错误释放
+//    [pool drain];
     
-    NSString *name = nil;
-    NSDictionary *dic = @{@"name":name, @"age":@27};
+     NSException *exception = [NSException exceptionWithName:@"HotTeaException" reason:@"The tea is too hot" userInfo:nil];
+    
+    [exception raise];
+    
+//    NSInteger le = s.length;
+//    [pool drain];//EXC_BAD_ACCESS
+
+    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    
+        
+//    });
+    
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//
+//        NSString *arr = @[];
+//        NSInteger len = arr.length;
+//        
+//        NSArray *array = @[];
+//        id co = array[3];
+//
+//
+//
+//        NSString *name = nil;
+//        NSDictionary *dic = @{@"name":name, @"age":@27};
+//    });
 }
 
 - (void)didReceiveMemoryWarning
