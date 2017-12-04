@@ -7,7 +7,6 @@
 //
 
 #import "DumbViewController.h"
-#import "DumbCatchCrash.h"
 
 @interface DumbViewController ()
 
@@ -27,9 +26,9 @@
 //    [s release];//错误释放
 //    [pool drain];
     
-     NSException *exception = [NSException exceptionWithName:@"HotTeaException" reason:@"The tea is too hot" userInfo:nil];
-    
-    [exception raise];
+//     NSException *exception = [NSException exceptionWithName:@"HotTeaException" reason:@"The tea is too hot" userInfo:nil];
+//
+//    [exception raise];
     
 //    NSInteger le = s.length;
 //    [pool drain];//EXC_BAD_ACCESS
@@ -41,10 +40,18 @@
 //    });
     
 //    dispatch_async(dispatch_get_main_queue(), ^{
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSString *arr = @[];
+        NSInteger len = arr.length;
+        
+        NSArray *array = @[];
+        id co = array[3];
+    });
+    
 //
-//        NSString *arr = @[];
-//        NSInteger len = arr.length;
-//        
+    self.view.backgroundColor = [UIColor redColor];
+//
 //        NSArray *array = @[];
 //        id co = array[3];
 //
@@ -53,6 +60,11 @@
 //        NSString *name = nil;
 //        NSDictionary *dic = @{@"name":name, @"age":@27};
 //    });
+}
+
+- (IBAction)action:(id)sender
+{
+    NSLog(@"---click----");
 }
 
 - (void)didReceiveMemoryWarning

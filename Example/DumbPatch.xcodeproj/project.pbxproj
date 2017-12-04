@@ -23,7 +23,11 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		AE3665771FC66CFE0008D8D4 /* DumbCatchCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3665761FC66CFE0008D8D4 /* DumbCatchCrash.m */; };
+		AE0E5F2E1FD55AC900F5A3B0 /* MPCrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0E5F251FD55AC900F5A3B0 /* MPCrashHandler.m */; };
+		AE0E5F2F1FD55AC900F5A3B0 /* MPCrashInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0E5F271FD55AC900F5A3B0 /* MPCrashInfo.m */; };
+		AE0E5F301FD55AC900F5A3B0 /* MPCrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0E5F291FD55AC900F5A3B0 /* MPCrashReporter.m */; };
+		AE0E5F311FD55AC900F5A3B0 /* MPExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0E5F2B1FD55AC900F5A3B0 /* MPExceptionHandler.m */; };
+		AE0E5F321FD55AC900F5A3B0 /* MPSignalHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0E5F2D1FD55AC900F5A3B0 /* MPSignalHandler.m */; };
 		E6B37711EADC466B429BB9A2 /* Pods_DumbPatch_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06B9AFFD0BA1DA3B2474C8A /* Pods_DumbPatch_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,8 +70,17 @@
 		7167F39B3C1384582D54ACDB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AE3665751FC66CFE0008D8D4 /* DumbCatchCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DumbCatchCrash.h; sourceTree = "<group>"; };
-		AE3665761FC66CFE0008D8D4 /* DumbCatchCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DumbCatchCrash.m; sourceTree = "<group>"; };
+		AE0E5F231FD55AC900F5A3B0 /* MPCrashHandler-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPCrashHandler-Header.h"; sourceTree = "<group>"; };
+		AE0E5F241FD55AC900F5A3B0 /* MPCrashHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCrashHandler.h; sourceTree = "<group>"; };
+		AE0E5F251FD55AC900F5A3B0 /* MPCrashHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCrashHandler.m; sourceTree = "<group>"; };
+		AE0E5F261FD55AC900F5A3B0 /* MPCrashInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCrashInfo.h; sourceTree = "<group>"; };
+		AE0E5F271FD55AC900F5A3B0 /* MPCrashInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCrashInfo.m; sourceTree = "<group>"; };
+		AE0E5F281FD55AC900F5A3B0 /* MPCrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCrashReporter.h; sourceTree = "<group>"; };
+		AE0E5F291FD55AC900F5A3B0 /* MPCrashReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCrashReporter.m; sourceTree = "<group>"; };
+		AE0E5F2A1FD55AC900F5A3B0 /* MPExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPExceptionHandler.h; sourceTree = "<group>"; };
+		AE0E5F2B1FD55AC900F5A3B0 /* MPExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPExceptionHandler.m; sourceTree = "<group>"; };
+		AE0E5F2C1FD55AC900F5A3B0 /* MPSignalHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSignalHandler.h; sourceTree = "<group>"; };
+		AE0E5F2D1FD55AC900F5A3B0 /* MPSignalHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSignalHandler.m; sourceTree = "<group>"; };
 		B06B9AFFD0BA1DA3B2474C8A /* Pods_DumbPatch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DumbPatch_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09F41D1D8DF67D53DD95DC6 /* Pods-DumbPatch_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DumbPatch_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DumbPatch_Example/Pods-DumbPatch_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,10 +159,9 @@
 		6003F593195388D20070C39A /* Example for DumbPatch */ = {
 			isa = PBXGroup;
 			children = (
+				AE0E5F221FD55AC900F5A3B0 /* MPCrashHandler */,
 				6003F59C195388D20070C39A /* DumbAppDelegate.h */,
 				6003F59D195388D20070C39A /* DumbAppDelegate.m */,
-				AE3665751FC66CFE0008D8D4 /* DumbCatchCrash.h */,
-				AE3665761FC66CFE0008D8D4 /* DumbCatchCrash.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* DumbViewController.h */,
 				6003F5A6195388D20070C39A /* DumbViewController.m */,
@@ -199,6 +211,24 @@
 				1834DF2F532380982FDCB2B4 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		AE0E5F221FD55AC900F5A3B0 /* MPCrashHandler */ = {
+			isa = PBXGroup;
+			children = (
+				AE0E5F231FD55AC900F5A3B0 /* MPCrashHandler-Header.h */,
+				AE0E5F241FD55AC900F5A3B0 /* MPCrashHandler.h */,
+				AE0E5F251FD55AC900F5A3B0 /* MPCrashHandler.m */,
+				AE0E5F261FD55AC900F5A3B0 /* MPCrashInfo.h */,
+				AE0E5F271FD55AC900F5A3B0 /* MPCrashInfo.m */,
+				AE0E5F281FD55AC900F5A3B0 /* MPCrashReporter.h */,
+				AE0E5F291FD55AC900F5A3B0 /* MPCrashReporter.m */,
+				AE0E5F2A1FD55AC900F5A3B0 /* MPExceptionHandler.h */,
+				AE0E5F2B1FD55AC900F5A3B0 /* MPExceptionHandler.m */,
+				AE0E5F2C1FD55AC900F5A3B0 /* MPSignalHandler.h */,
+				AE0E5F2D1FD55AC900F5A3B0 /* MPSignalHandler.m */,
+			);
+			path = MPCrashHandler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,9 +459,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* DumbAppDelegate.m in Sources */,
+				AE0E5F311FD55AC900F5A3B0 /* MPExceptionHandler.m in Sources */,
 				6003F5A7195388D20070C39A /* DumbViewController.m in Sources */,
+				AE0E5F2F1FD55AC900F5A3B0 /* MPCrashInfo.m in Sources */,
+				AE0E5F301FD55AC900F5A3B0 /* MPCrashReporter.m in Sources */,
+				AE0E5F321FD55AC900F5A3B0 /* MPSignalHandler.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				AE3665771FC66CFE0008D8D4 /* DumbCatchCrash.m in Sources */,
+				AE0E5F2E1FD55AC900F5A3B0 /* MPCrashHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

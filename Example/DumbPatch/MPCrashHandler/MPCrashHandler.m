@@ -1,0 +1,18 @@
+//
+//  MPCrashHandler.m
+//  DumbPatch_Example
+//
+//  Created by macRong on 2017/11/30.
+//  Copyright © 2017年 MPCrashHandler. All rights reserved.
+//
+
+#import "MPCrashHandler.h"
+
+
+@implementation MPCrashHandler
+
+
+
+
+
+@end

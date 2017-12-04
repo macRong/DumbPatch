@@ -7,36 +7,17 @@
 //
 
 #import "DumbAppDelegate.h"
-#import "DumbCatchCrash.h"
+#import "MPCrashHandler-Header.h"
 
 @implementation DumbAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    [DumbCatchCrash handelExtremely];
-
-//     InstallUncaughtExceptionHandler();
-
-
-//         NSSetUncaughtExceptionHandler(handException);
+    
+    Install_MP_UncaughtExceptionHandler();
     
 
     return YES;
-}
-
-void handException(NSException * exception){
-    
-    /** 弹出提示框 */
-    UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"title" message:@"message" delegate:nil  cancelButtonTitle:@"cancel" otherButtonTitles:@"titles", nil];
-    [alert show];
-    
-    /** 重新启动 runloop */
-    [[NSRunLoop currentRunLoop]addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
-    [[NSRunLoop currentRunLoop]run];
-    
-    NSLog(@"---runloop 完成----");
-    
-    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
