@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/DumbPatch.svg?style=flat)](http://cocoapods.org/pods/DumbPatch)
 [![Platform](https://img.shields.io/cocoapods/p/DumbPatch.svg?style=flat)](http://cocoapods.org/pods/DumbPatch)
 
+快速降低iOS崩溃率 (只需要加入项目中)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
