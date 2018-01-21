@@ -11,6 +11,43 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+* <mark>Array</mark> (__NSArrayM, __NSArray0, __NSArrayI, Unrecognized selector sent to instance):
+
+```
+NSArray *arr = @[];
+NSMutableArray *mArr = @[].mutableCopy;
+```
+ 
+
+```
+Unrecognized selector sent to instance ✅
+
+*** Terminating app due to uncaught exception 'NSRangeException',
+ reason: '*** -[__NSArrayM objectAtIndex:]: index 6 beyond bounds for empty NSArray
+id obj = arr[6];  ✅
+id objc = [arr objectAtIndex:6]; ✅
+
+*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '*** -[__NSArrayM insertObject:atIndex:]: object cannot be nil
+[mArr addObject:nil]; ✅
+
+Terminating app due to uncaught exception 'NSRangeException',reason: '*** -[__NSArrayM removeObjectAtIndex:]: index 6  beyond bounds for empty
+[mArr removeObjectAtIndex:6]; ✅
+ 
+ *** Terminating app due to uncaught exception 'NSInvalidArgumentException',reason: '*** -[__NSArrayM insertObject:atIndex:]: object cannot be nil
+[mArr insertObject:nil atIndex:6]; ✅
+
+Terminating app due to uncaught exception 'NSRangeException', reason: '*** -[__NSArrayM replaceObjectAtIndex:withObject:]: index 6 beyond bounds for empty
+[mArr replaceObjectAtIndex:6 withObject:@"obj"]; ✅
+
+*** -[__NSPlaceholderArray initWithObjects:count:]: attempt to insert nil object from objects[0]'example：NSString *k = nil;  [NSArray arrayWithObject:k]
+NSString *k = nil; 
+[NSArray arrayWithObject:k] ✅
+
+*** -attempt to insert nil object from objects[0]
+NSArray *ar = [NSArray arrayWithObjects:@"1",,@"2", nil]; ✅
+
+```
+
 ## Requirements
 
 ## Installation
