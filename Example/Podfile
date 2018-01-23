@@ -7,6 +7,5 @@ target 'DumbPatch_Example' do
   target 'DumbPatch_Tests' do
     inherit! :search_paths
 
-    pod 'Kiwi'
   end
 end
