@@ -2,9 +2,9 @@
 
 [![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg?style=plastic)](https://github.com/macRong/DumbPatch)
 [![Version](https://img.shields.io/cocoapods/v/DumbPatch.svg?style=flat)](https://github.com/macRong/DumbPatch)
-[![apm](https://img.shields.io/apm/l/vim-mode.svg?style=plastic)](https://github.com/macRong/DumbPatch)
 [![Platform](https://img.shields.io/cocoapods/p/DumbPatch.svg?style=flat)](https://github.com/macRong/DumbPatch)
 [![Language](https://awesomelinkcounter.herokuapp.com/objc)](https://github.com/macRong/DumbPatch)
+[![apm](https://img.shields.io/apm/l/vim-mode.svg?style=plastic)](https://github.com/macRong/DumbPatch)
 
 快速降低iOS崩溃率 (只需要加入项目中)
 
