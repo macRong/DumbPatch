@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/DumbPatch.svg?style=flat)](http://cocoapods.org/pods/DumbPatch)
 [![License](https://img.shields.io/cocoapods/l/DumbPatch.svg?style=flat)](http://cocoapods.org/pods/DumbPatch)
 [![Platform](https://img.shields.io/cocoapods/p/DumbPatch.svg?style=flat)](http://cocoapods.org/pods/DumbPatch)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 
 快速降低iOS崩溃率 (只需要加入项目中)
 
