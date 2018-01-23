@@ -1,9 +1,10 @@
 # DumbPatch
 
-[![CI Status](http://img.shields.io/travis/rongtian/DumbPatch.svg?style=flat)](https://travis-ci.org/rongtian/DumbPatch)
+[![CI Status](http://img.shields.io/travis/macRong/DumbPatch.svg?style=flat)](https://travis-ci.org/macRong/DumbPatch)
 [![Version](https://img.shields.io/cocoapods/v/DumbPatch.svg?style=flat)](http://cocoapods.org/pods/DumbPatch)
 [![License](https://img.shields.io/cocoapods/l/DumbPatch.svg?style=flat)](http://cocoapods.org/pods/DumbPatch)
 [![Platform](https://img.shields.io/cocoapods/p/DumbPatch.svg?style=flat)](http://cocoapods.org/pods/DumbPatch)
+[![Language](https://awesomelinkcounter.herokuapp.com/objc)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 
 快速降低iOS崩溃率 (只需要加入项目中)
